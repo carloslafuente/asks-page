@@ -17,6 +17,7 @@ const blankie = require('blankie');
 const server = hapi.server({
   port: process.env.PORT || 3000,
   host: process.env.HOST || 'localhost',
+  uri: 'http://asks-page.herokuapp.com:52968',
   routes: {
     files: {
       relativeTo: path.join(__dirname, 'public'),
