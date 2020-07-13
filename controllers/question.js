@@ -15,19 +15,20 @@ async function createQuestion(req, h) {
   try {
     if (req.payload.image != null) {
       filename = `${uuid()}.png`;
-      fs.readFile(req.payload.image.path, (err, data) => {
-        fs.writeFile(
-          join(__dirname, '..', 'public', 'uploads', filename),
-          data,
-          (err) => {
-            if (err) {
-              console.error(err);
-            } else {
-              console.log(data);
-            }
-          }
-        );
-      });
+      // fs.readFile(req.payload.image.path, (err, data) => {
+      //   fs.writeFile(
+      //     join(__dirname, '..', 'public', 'uploads', filename),
+      //     data,
+      //     (err) => {
+      //       if (err) {
+      //         console.error(err);
+      //       } else {
+      //         console.log(data);
+      //       }
+      //     }
+      //   );
+      // });
+    req.log('info', `Funcion de subir imagenes deshabilitada para web`);
     }
     result = await Question.createQuestion(
       req.payload,
