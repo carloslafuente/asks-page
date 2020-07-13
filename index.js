@@ -119,4 +119,6 @@ process.on('unhandledException', (error) => {
   server.log('unhandledException', error);
 });
 
+console.log(process.env.NODE_ENV, process.env.HOST, process.env.PORT);
+
 init();
