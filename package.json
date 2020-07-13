@@ -1,0 +1,40 @@
+{
+  "name": "asks-page",
+  "version": "1.0.0",
+  "description": "Pagina de preguntas y respuestas",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloslafuente/asks-page.git"
+  },
+  "author": "Carlos La Fuente",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloslafuente/asks-page/issues"
+  },
+  "homepage": "https://github.com/carloslafuente/asks-page#readme",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/basic": "^6.0.0",
+    "@hapi/boom": "^9.1.0",
+    "@hapi/crumb": "^8.0.0",
+    "@hapi/good": "^9.0.0",
+    "@hapi/good-console": "^9.0.0",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/scooter": "^6.0.0",
+    "@hapi/vision": "^6.0.0",
+    "bcrypt": "^5.0.0",
+    "blankie": "^5.0.0",
+    "firebase-admin": "^8.12.1",
+    "handlebars": "^4.7.6",
+    "standard": "^14.3.4",
+    "uuid": "^8.1.0"
+  }
+}
