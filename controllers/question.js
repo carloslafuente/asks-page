@@ -28,13 +28,14 @@ async function createQuestion(req, h) {
       //     }
       //   );
       // });
-    req.log('info', `Funcion de subir imagenes deshabilitada para web`);
+      req.log('info', `Funcionabilidad de subida de imagenes bloqueada para web.`);
     }
-    result = await Question.createQuestion(
-      req.payload,
-      req.state.user,
-      filename
-    );
+    // result = await Question.createQuestion(
+    //   req.payload,
+    //   req.state.user,
+    //   filename
+    // );
+    result = await Question.createQuestion(req.payload, req.state.user);
     req.log('info', `Pregunta creada con el ID: ${result}`);
   } catch (error) {
     req.log('error', `Ocurrio un error: ${error}`);
