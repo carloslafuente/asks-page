@@ -120,5 +120,6 @@ process.on('unhandledException', (error) => {
 });
 
 console.log(process.env.NODE_ENV, process.env.HOST, process.env.PORT);
+console.log(server.info);
 
 init();
