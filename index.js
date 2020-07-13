@@ -15,6 +15,7 @@ const scooter = require('@hapi/scooter');
 const blankie = require('blankie');
 
 const server = hapi.server({
+  autoListen: true,
   port: process.env.PORT || 3000,
   host: process.env.HOST || 'localhost',
   routes: {
