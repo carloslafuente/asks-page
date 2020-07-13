@@ -85,20 +85,20 @@ const init = async () => {
   try {
     await declarePlugins();
 
-    server.method('setAnswerRight', methods.setAnswerRight);
-    server.method('getLast', methods.getLast, {
-      cache: {
-        expiresIn: 1000 * 60,
-        generateTimeout: 2000,
-      },
-    });
+    // server.method('setAnswerRight', methods.setAnswerRight);
+    // server.method('getLast', methods.getLast, {
+    //   cache: {
+    //     expiresIn: 1000 * 60,
+    //     generateTimeout: 2000,
+    //   },
+    // });
 
     // Definiendo las opciones de estado de las cokies en una variable user
-    server.state('user', {
-      ttl: 1000 * 60 * 60 * 24 * 7,
-      isSecure: process.env.NODE_ENV === 'production',
-      encoding: 'base64json',
-    });
+    // server.state('user', {
+    //   ttl: 1000 * 60 * 60 * 24 * 7,
+    //   isSecure: process.env.NODE_ENV === 'production',
+    //   encoding: 'base64json',
+    // });
 
     server.route(routes);
     await initViews();
