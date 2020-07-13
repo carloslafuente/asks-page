@@ -17,7 +17,7 @@ const blankie = require('blankie');
 const server = hapi.server({
   autoListen: true,
   port: process.env.PORT || 3000,
-  host: process.env.HOST || 'localhost',
+  host: process.env.HOST || '0.0.0.0',
   routes: {
     files: {
       relativeTo: path.join(__dirname, 'public'),
