@@ -1,20 +1,38 @@
 html {
-  position: relative;
-  min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
-  margin-bottom: 100px;
+	margin-bottom: 100px;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  line-height: 60px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	line-height: 60px;
 }
 
 .small-logo {
-  max-height: 20px;
+	max-height: 20px;
+}
+
+@media (max-width: 400px) {
+	.text-dark {
+		font-size: 1rem;
+	}
+
+	.text-dark-2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 900px) {
+	.display-3 {
+		font-size: 2rem;
+		font-weight: bold;
+	}
 }
